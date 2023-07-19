@@ -44,7 +44,7 @@ public class AuthTest {
     @Test
     void authTest() {
         Configuration.pageLoadStrategy = "eager";
-        AuthRequest creds = new AuthRequest("test123456", "Test123456@!");
+        AuthRequest creds = new AuthRequest("test123456", "Test123456@");
         GenerateTokenResponse generateTokenResponse = generateToken(creds);
         assertThat(generateTokenResponse.getStatus()).isEqualTo("Success");
         LoginResponse loginData = login(creds);
