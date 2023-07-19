@@ -1,9 +1,9 @@
 package cloud.autotests;
 
 import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
 
-@Data
+@Getter
 @Builder
 public class AuthRequest {
     private String userName;
