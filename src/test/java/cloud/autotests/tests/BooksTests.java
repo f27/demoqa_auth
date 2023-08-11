@@ -20,7 +20,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class BooksTests extends BaseTest {
 
     @Test
-    @DisplayName("Добаввление книги в профиль")
+    @DisplayName("Добавление книги в профиль")
     void addBookToProfileTest() {
         TokenModel tokenModel = AccountApi.generateToken(CREDENTIALS);
         assertThat(tokenModel.getStatus()).isEqualTo("Success");
