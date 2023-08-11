@@ -1,9 +1,9 @@
-package cloud.autotests;
+package cloud.autotests.models;
 
 import lombok.Getter;
 
 @Getter
-public class GenerateTokenResponse {
+public class TokenModel {
     private String expires;
     private String result;
     private String status;

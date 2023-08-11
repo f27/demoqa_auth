@@ -1,9 +1,9 @@
-package cloud.autotests;
+package cloud.autotests.models;
 
 import lombok.Getter;
 
 @Getter
-public class LoginResponse {
+public class LoginResultModel {
     private String userId;
     private String username;
     private String password;
