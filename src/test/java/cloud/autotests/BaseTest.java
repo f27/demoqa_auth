@@ -28,7 +28,7 @@ public class BaseTest {
     }
 
     @AfterEach
-    public void addAttachments() {
+    public void closeWebDriver() {
         Selenide.closeWebDriver();
     }
 }
