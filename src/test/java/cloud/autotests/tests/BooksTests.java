@@ -5,6 +5,7 @@ import cloud.autotests.api.AccountApi;
 import cloud.autotests.api.BooksApi;
 import cloud.autotests.models.*;
 import com.codeborne.selenide.Selenide;
+import io.qameta.allure.AllureId;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Cookie;
@@ -20,6 +21,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class BooksTests extends BaseTest {
 
     @Test
+    @AllureId("25256")
     @DisplayName("Добавление книги в профиль")
     void addBookToProfileTest() {
         TokenModel tokenModel = AccountApi.generateToken(CREDENTIALS);
@@ -44,6 +46,7 @@ public class BooksTests extends BaseTest {
     }
 
     @Test
+    @AllureId("25257")
     @DisplayName("Удаление книги из профиля")
     void deleteBookFromProfileTest() {
         TokenModel tokenModel = AccountApi.generateToken(CREDENTIALS);

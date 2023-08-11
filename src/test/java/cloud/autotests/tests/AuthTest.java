@@ -6,6 +6,7 @@ import cloud.autotests.models.CredentialsModel;
 import cloud.autotests.models.LoginResultModel;
 import cloud.autotests.models.TokenModel;
 import com.codeborne.selenide.Configuration;
+import io.qameta.allure.AllureId;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Cookie;
@@ -19,6 +20,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class AuthTest extends BaseTest {
 
     @Test
+    @AllureId("25255")
     @DisplayName("Успешная авторизация")
     void authTest() {
         TokenModel tokenModel = AccountApi.generateToken(CREDENTIALS);
